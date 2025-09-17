@@ -1,4 +1,3 @@
-<img width="358" height="59" alt="image" src="https://github.com/user-attachments/assets/0823bbc3-2fa6-48fb-86f6-52f706099ddd" /># Диспетчеризация котельных (Moниторинг Owen Cloud)
 
 WPF-приложение для удаленного мониторинга параметров котельных через Owen Cloud API.
 
@@ -10,6 +9,9 @@ WPF-приложение для удаленного мониторинга па
 *   **HTTP-клиент:** REST API
 *   **Дополнительно:** JSON, REST API, LINQ, MahApps
 
-<img width="835" height="450" alt="image" src="https://github.com/user-attachments/assets/c1e32096-8edb-4e69-a535-3f0510f17502" />
+<img width="835" height="480" alt="image" src="https://github.com/user-attachments/assets/fd1e4753-d01e-46f6-83c6-3e07e8f3b865" />
+<img width="835" height="480" alt="image" src="https://github.com/user-attachments/assets/070512ad-9c47-43c7-aa40-ae89636eb15a" />
+
+
 
 
