@@ -1,0 +1,25 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+    <NoWarn>$(NoWarn);NU1507</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Bogus" Version="35.6.3" />
+    <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageVersion Include="FontAwesome" Version="4.7.0" />
+    <PackageVersion Include="FontAwesome.WPF" Version="4.7.0.9" />
+    <PackageVersion Include="LiveChartsCore" Version="2.0.0-rc5.4" />
+    <PackageVersion Include="LiveChartsCore.SkiaSharpView.WPF" Version="2.0.0-rc5.4" />
+    <PackageVersion Include="MahApps.Metro" Version="2.4.10" />
+    <PackageVersion Include="MahApps.Metro.IconPacks" Version="6.1.0" />
+    <PackageVersion Include="MahApps.Metro.Resources" Version="0.6.1" />
+    <PackageVersion Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.0-preview.7.25380.108" />
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.4-beta1" />
+    <PackageVersion Include="RestSharp" Version="112.1.1-alpha.0.4" />
+    <PackageVersion Include="SharpVectors" Version="1.8.5" />
+    <PackageVersion Include="SharpVectors.Wpf" Version="1.8.5" />
+    <PackageVersion Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+</Project>

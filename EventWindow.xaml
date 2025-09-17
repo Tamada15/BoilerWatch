@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="WpfApp1.EventWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+        mc:Ignorable="d"
+        d:DesignHeight="800" d:DesignWidth="1200"
+        d:DataContext="{d:DesignInstance Type=local:EventsViewModel}">
+    <UserControl.Resources>
+        <CollectionViewSource x:Key="EventsViewSource" 
+                              Source="{Binding Events_Items}">
+        </CollectionViewSource>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" ></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBlock Text="События" FontSize="25" FontFamily="Roboto" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" Margin="20,0,0,0"  />
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <DatePicker Margin="20,0,0,0"  VerticalAlignment="Top" SelectedDate="{Binding EventDate,Mode=TwoWay}" />
+            <Button  Content="Применить" Margin="5,0,0,0" VerticalAlignment="Top" Height="25" Command="{Binding ApplyFilter}"/>
+        </StackPanel>
+        <Border CornerRadius="10" Grid.Row="1" Margin="20,30,20,20" Background="White">
+          <DataGrid Margin="10"
+          AutoGenerateColumns="False"
+          IsReadOnly="True"               
+          CanUserReorderColumns="False"
+          CanUserAddRows="False"
+          CanUserDeleteRows="False"
+          CanUserResizeColumns="False"
+          CanUserSortColumns="False"      
+          HeadersVisibility="Column"
+          EnableRowVirtualization="True"
+          SelectionUnit="FullRow"         
+          SelectionMode="Single"
+          ItemsSource="{Binding Source={StaticResource EventsViewSource}}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Вид" Binding="{Binding eventType}" Width="*" />
+                    <DataGridTextColumn Header="Время" Binding="{Binding StartDateTime, StringFormat={}{0:dd.MM.yyyy HH:mm:ss}}" Width="*" />
+                    <DataGridTextColumn Header="Сообщение" Binding="{Binding Message}" Width="600" />
+                    <DataGridTextColumn Header="Статус" Binding="{Binding IsActive}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </Grid>
+</UserControl>

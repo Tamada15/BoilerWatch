@@ -1,0 +1,5 @@
+C:\C#\Baikals\obj\Debug\Baikals.csproj.AssemblyReference.cache
+C:\C#\Baikals\obj\Debug\MainWindow.g.cs
+C:\C#\Baikals\obj\Debug\App.g.cs
+C:\C#\Baikals\obj\Debug\Baikals_MarkupCompile.cache
+C:\C#\Baikals\obj\Debug\Baikals_MarkupCompile.lref

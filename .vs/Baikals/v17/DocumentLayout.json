@@ -1,0 +1,175 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\C#\\BoilerWatch\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|c:\\c#\\boilerwatch\\shellwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|solutionrelative:shellwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|c:\\c#\\boilerwatch\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|c:\\c#\\boilerwatch\\eventwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|solutionrelative:eventwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|c:\\c#\\boilerwatch\\viewmodels\\eventsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|solutionrelative:viewmodels\\eventsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|c:\\c#\\boilerwatch\\viewmodels\\appstateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|solutionrelative:viewmodels\\appstateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|c:\\c#\\boilerwatch\\classes\\http_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|solutionrelative:classes\\http_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|c:\\c#\\boilerwatch\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|solutionrelative:viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|c:\\c#\\boilerwatch\\viewmodels\\viewchartsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042E48C0-CA66-4829-9798-0A1050B15729}|Baikals.csproj|solutionrelative:viewmodels\\viewchartsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 459,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShellWindow.xaml",
+              "DocumentMoniker": "C:\\C#\\BoilerWatch\\ShellWindow.xaml",
+              "RelativeDocumentMoniker": "ShellWindow.xaml",
+              "ToolTip": "C:\\C#\\BoilerWatch\\ShellWindow.xaml",
+              "RelativeToolTip": "ShellWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-17T05:19:45.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\C#\\BoilerWatch\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\C#\\BoilerWatch\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-17T05:17:19.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\C#\\BoilerWatch\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\C#\\BoilerWatch\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T13:16:38.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ViewChartsModel.cs",
+              "DocumentMoniker": "C:\\C#\\BoilerWatch\\ViewModels\\ViewChartsModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ViewChartsModel.cs",
+              "ToolTip": "C:\\C#\\BoilerWatch\\ViewModels\\ViewChartsModel.cs",
+              "RelativeToolTip": "ViewModels\\ViewChartsModel.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAIEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T08:09:56.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventWindow.xaml",
+              "DocumentMoniker": "C:\\C#\\BoilerWatch\\EventWindow.xaml",
+              "RelativeDocumentMoniker": "EventWindow.xaml",
+              "ToolTip": "C:\\C#\\BoilerWatch\\EventWindow.xaml",
+              "RelativeToolTip": "EventWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-12T07:36:56.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventsViewModel.cs",
+              "DocumentMoniker": "C:\\C#\\BoilerWatch\\ViewModels\\EventsViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\EventsViewModel.cs",
+              "ToolTip": "C:\\C#\\BoilerWatch\\ViewModels\\EventsViewModel.cs",
+              "RelativeToolTip": "ViewModels\\EventsViewModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T05:28:08.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppStateViewModel.cs",
+              "DocumentMoniker": "C:\\C#\\BoilerWatch\\ViewModels\\AppStateViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AppStateViewModel.cs",
+              "ToolTip": "C:\\C#\\BoilerWatch\\ViewModels\\AppStateViewModel.cs",
+              "RelativeToolTip": "ViewModels\\AppStateViewModel.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T07:09:47.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HTTP_Client.cs",
+              "DocumentMoniker": "C:\\C#\\BoilerWatch\\Classes\\HTTP_Client.cs",
+              "RelativeDocumentMoniker": "Classes\\HTTP_Client.cs",
+              "ToolTip": "C:\\C#\\BoilerWatch\\Classes\\HTTP_Client.cs",
+              "RelativeToolTip": "Classes\\HTTP_Client.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwDoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T00:14:55.193Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

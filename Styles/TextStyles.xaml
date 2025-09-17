@@ -1,0 +1,197 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                    xmlns:local="clr-namespace:WpfApp1">
+
+    <local:ParameterValueConverter x:Key="ParamConverter"/>
+    
+    <Style x:Key="NS_1_Kot" TargetType="TextBlock">
+        <Setter Property="Text" Value="N/A"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742427', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Работа"/>
+                <Setter Property="Foreground"  Value="#ACC204"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742427', FallbackValue='N/A'}" Value="0.0">
+                <Setter Property="Text"  Value="Остановка"/>
+                <Setter Property="Foreground"  Value="#60676C"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742421', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Авария"/>
+                <Setter Property="Foreground"  Value="Red"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="NS_2_Kot" TargetType="TextBlock">
+        <Setter Property="Text" Value="N/A"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742428', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Работа"/>
+                <Setter Property="Foreground"  Value="#ACC204"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742428', FallbackValue='N/A'}" Value="0.0">
+                <Setter Property="Text"  Value="Остановка"/>
+                <Setter Property="Foreground"  Value="#60676C"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742422', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Авария"/>
+                <Setter Property="Foreground"  Value="Red"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="NS_1_Set" TargetType="TextBlock">
+        <Setter Property="Text" Value="N/A"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742494', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Работа"/>
+                <Setter Property="Foreground"  Value="#ACC204"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742494', FallbackValue='N/A'}" Value="0.0">
+                <Setter Property="Text"  Value="Остановка"/>
+                <Setter Property="Foreground"  Value="#60676C"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742488', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Авария"/>
+                <Setter Property="Foreground"  Value="Red"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="NS_2_Set" TargetType="TextBlock">
+        <Setter Property="Text" Value="N/A"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742495', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Работа"/>
+                <Setter Property="Foreground"  Value="#ACC204"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742495', FallbackValue='N/A'}" Value="0.0">
+                <Setter Property="Text"  Value="Остановка"/>
+                <Setter Property="Foreground"  Value="#60676C"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742489', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Авария"/>
+                <Setter Property="Foreground"  Value="Red"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="NS_1_Pod" TargetType="TextBlock">
+        <Setter Property="Text" Value="N/A"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742480', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Работа"/>
+                <Setter Property="Foreground"  Value="#ACC204"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742480', FallbackValue='N/A'}" Value="0.0">
+                <Setter Property="Text"  Value="Остановка"/>
+                <Setter Property="Foreground"  Value="#60676C"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742472', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Авария"/>
+                <Setter Property="Foreground"  Value="Red"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="NS_2_Pod" TargetType="TextBlock">
+        <Setter Property="Text" Value="N/A"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742481', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Работа"/>
+                <Setter Property="Foreground"  Value="#ACC204"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742481', FallbackValue='N/A'}" Value="0.0">
+                <Setter Property="Text"  Value="Остановка"/>
+                <Setter Property="Foreground"  Value="#60676C"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742475', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Авария"/>
+                <Setter Property="Foreground"  Value="Red"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="Kot_1" TargetType="TextBlock">
+        <Setter Property="Text" Value="N/A"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742348', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Работа"/>
+                <Setter Property="Foreground"  Value="#ACC204"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742348', FallbackValue='N/A'}" Value="0.0">
+                <Setter Property="Text"  Value="Остановка"/>
+                <Setter Property="Foreground"  Value="#60676C"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742332', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Авария"/>
+                <Setter Property="Foreground"  Value="Red"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="Kot_2" TargetType="TextBlock">
+        <Setter Property="Text" Value="N/A"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742369', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Работа"/>
+                <Setter Property="Foreground"  Value="#ACC204"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742369', FallbackValue='N/A'}" Value="0.0">
+                <Setter Property="Text"  Value="Остановка"/>
+                <Setter Property="Foreground"  Value="#60676C"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742353', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Авария"/>
+                <Setter Property="Foreground"  Value="Red"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="Kot_3" TargetType="TextBlock">
+        <Setter Property="Text" Value="N/A"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742390', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Работа"/>
+                <Setter Property="Foreground"  Value="#ACC204"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742390', FallbackValue='N/A'}" Value="0.0">
+                <Setter Property="Text"  Value="Остановка"/>
+                <Setter Property="Foreground"  Value="#60676C"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742374', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Авария"/>
+                <Setter Property="Foreground"  Value="Red"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="Kot_4" TargetType="TextBlock">
+        <Setter Property="Text" Value="N/A"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742411', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Работа"/>
+                <Setter Property="Foreground"  Value="#ACC204"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742411', FallbackValue='N/A'}" Value="0.0">
+                <Setter Property="Text"  Value="Остановка"/>
+                <Setter Property="Foreground"  Value="#60676C"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742395', FallbackValue='N/A'}" Value="1.0">
+                <Setter Property="Text"  Value="Авария"/>
+                <Setter Property="Foreground"  Value="Red"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+</ResourceDictionary>

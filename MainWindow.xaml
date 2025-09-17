@@ -1,0 +1,540 @@
+﻿<UserControl x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        d:DesignHeight="2500" d:DesignWidth="1920"
+        d:DataContext="{d:DesignInstance Type=local:MainViewModel}" 
+        >
+    <Grid >
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Name="MainScrollView">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="189"></RowDefinition>
+                    <RowDefinition Height="238"></RowDefinition>
+                    <RowDefinition Height="238"></RowDefinition>
+                    <RowDefinition Height="405"></RowDefinition>
+                    <RowDefinition Height="405"></RowDefinition>
+                    <RowDefinition Height="405"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Название компании" FontSize="25" FontFamily="Roboto" FontWeight="Light" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,32,35,0"/>
+                
+                <TextBlock Grid.Row="0" Text="Главное меню" FontSize="35" FontFamily="Roboto" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="78,0,0,42"/>
+
+                <Grid Grid.Row="1" Margin="78,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="43"></RowDefinition>
+                        <RowDefinition Height="167"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Котловой контур" FontSize="20" FontFamily="Roboto" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                    <StackPanel Grid.Row="1"  Orientation="Horizontal" VerticalAlignment="Center">
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150"  >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#006B92" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="Pump" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Насос 1" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" FontSize="26" FontWeight="Bold" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0" Style="{StaticResource NS_1_Kot}"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Статус насоса 1 котлового контура" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0" >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#006B92" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="Pump" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Насос 2" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0"  FontSize="26" FontWeight="Bold" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0" Style="{StaticResource NS_2_Kot}"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Статус насоса 2 котлового контура" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0" >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#4D00FF" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="GaugeEmpty" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Давление" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742431', FallbackValue='N/A'}"
+                                               FontSize="26" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="МПа" FontSize="17" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="156,53,0,0"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Давление до котловых насосов" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0" >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#4D00FF" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="GaugeEmpty" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Давление" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742432', FallbackValue='N/A'}"
+                            FontSize="26" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="МПа" FontSize="17" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="156,53,0,0"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Давление после котловых насосов" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="2" Margin="78,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="43"></RowDefinition>
+                        <RowDefinition Height="167"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Подпитка" FontSize="20" FontFamily="Roboto" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center">
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150"  >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#006B92" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="Pump" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Насос 1" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" FontSize="26" FontWeight="Bold" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0" Style="{StaticResource NS_1_Pod}"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Статус насоса 1 подпитки" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0" >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#006B92" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="Pump" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Насос 2" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" FontSize="26" FontWeight="Bold" FontFamily="Roboto"  HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0" Style="{StaticResource NS_2_Pod}"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Статус насоса 2 подпитки" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0" >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#4D00FF" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="GaugeEmpty" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Давление" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742436', FallbackValue='N/A'}"
+                             FontSize="26" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="МПа" FontSize="17" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="156,53,0,0"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Давление сети" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0" >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#4D00FF" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="GaugeEmpty" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Давление" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742437', FallbackValue='N/A'}"
+                             FontSize="26" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="МПа" FontSize="17" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="156,53,0,0"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Давление после насосов подпитки" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="3" Margin="78,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="43"></RowDefinition>
+                        <RowDefinition Height="167"></RowDefinition>
+                        <RowDefinition Height="167"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Сетевой контур" FontSize="20" FontFamily="Roboto" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                    <StackPanel Grid.Row="1"  Orientation="Horizontal" VerticalAlignment="Center">
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150"  >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#006B92" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="Pump" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Насос 1" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" FontSize="26" FontWeight="Bold" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0" Style="{StaticResource NS_1_Set}"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Статус насоса 1 сетевого контура" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0"  >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#006B92" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="Pump" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Насос 2" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" FontSize="26" FontWeight="Bold" FontFamily="Roboto"  HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0" Style="{StaticResource NS_2_Set}"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Статус насоса 2 сетевого контура" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0" >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#4D00FF" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="GaugeEmpty" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Давление" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742434', FallbackValue='N/A'}" 
+                             FontSize="26" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="МПа" FontSize="17" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="156,53,0,0"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Давление обратки" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0">
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#4D00FF" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="GaugeEmpty" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Давление" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742432', FallbackValue='N/A'}"
+                             FontSize="26" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="МПа" FontSize="17" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="156,53,0,0"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Давление подачи" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+
+                    </StackPanel>
+                    <StackPanel Grid.Row="2"  Orientation="Horizontal" VerticalAlignment="Center">
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150"  >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#ACC204" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconPhosphorIcons Kind="Thermometer" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Температура" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742439', FallbackValue='N/A'}"
+                             FontSize="26" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="°C" FontSize="17" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="156,53,0,0"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Температура обратки" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0" >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#ACC204" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconPhosphorIcons Kind="Thermometer" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Температура" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742438', FallbackValue='N/A'}" 
+                             FontSize="26" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="°C" FontSize="17" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="156,53,0,0"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Температура подачи" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+
+
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="4" Margin="78,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="43"></RowDefinition>
+                        <RowDefinition Height="167"></RowDefinition>
+                        <RowDefinition Height="167"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Котлы" FontSize="20" FontFamily="Roboto" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                    <StackPanel Grid.Row="1"  Orientation="Horizontal" VerticalAlignment="Center">
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150"  >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#FF0000" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="WaterBoiler" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Котел 1" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" FontSize="26" FontWeight="Bold" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0" Style="{StaticResource Kot_1}"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Статус котла 1" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0" >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#FF0000" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="WaterBoiler" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Котел 2" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" FontSize="26" FontWeight="Bold" FontFamily="Roboto"  HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0" Style="{StaticResource Kot_2}"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Статус котла 2" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0" >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#FF0000" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="WaterBoiler" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Котел 3" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" FontSize="26" FontWeight="Bold" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0" Style="{StaticResource Kot_3}"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Статус котла 3" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0" >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#FF0000" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconMaterial Kind="WaterBoiler" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Котел 4" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" FontSize="26" FontWeight="Bold" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0" Style="{StaticResource Kot_4}"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Статус котла 4" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2"  Orientation="Horizontal" VerticalAlignment="Center">
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150"  >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#ACC204" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconPhosphorIcons Kind="Thermometer" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Температура" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742351', FallbackValue='N/A'}" 
+                             FontSize="26" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="°C" FontSize="17" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="156,53,0,0"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Температура котла 1" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0" >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#ACC204" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconPhosphorIcons Kind="Thermometer" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Температура" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742372', FallbackValue='N/A'}" 
+                             FontSize="26" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="°C" FontSize="17" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="156,53,0,0"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Температура котла 2" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0" >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#ACC204" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconPhosphorIcons Kind="Thermometer" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Температура" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742393', FallbackValue='N/A'}"
+                             FontSize="26" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="°C" FontSize="17" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="156,53,0,0"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Температура котла 3" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10" Background="#1F2427" Width="364" Height="150" Margin="28,0,0,0" >
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="95"/>
+                                        <RowDefinition Height="55"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Height="55" Width="55" Background="#ACC204" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16.79,0,0,0">
+                                        <iconPacks:PackIconPhosphorIcons Kind="Thermometer" Width="36.67" Height="27.5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                    <TextBlock Grid.Row="0" Text="Температура" FontSize="17" FontWeight="Regular" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,20,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="{Binding appState.Parameters, Converter={StaticResource ParamConverter}, ConverterParameter='UID1073742414', FallbackValue='N/A'}"
+                             FontSize="26" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="82,43,0,0"/>
+                                    <TextBlock Grid.Row="0" Text="°C" FontSize="17" FontWeight="Bold" FontFamily="Roboto" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="156,53,0,0"/>
+                                    <Border Grid.Row="0" Width="352" Height="0.3" Background="#60676C" VerticalAlignment="Bottom"  />
+                                    <TextBlock Grid.Row="1" Text="Температура котла 4" FontSize="13" FontWeight="Bold" FontFamily="Roboto" Foreground="#60676C" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="16.79,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+
+
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="5" Margin="78,0,0,0">
+                    <StackPanel Orientation="Horizontal">
+                     <Border Grid.Column="0" Background="#1F2427" CornerRadius="15" Width="756"  >
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="264*"/>
+                                <ColumnDefinition Width="1277*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="60"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="Основной график" FontFamily="Roboto" FontSize="20" FontWeight="SemiBold" Foreground="White" VerticalAlignment="Center" Margin="30,0,0,0" Grid.ColumnSpan="2" />
+                            <StackPanel Orientation="Horizontal" Margin="0,18,10,0" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Row="0" Grid.Column="1">
+                                <DatePicker x:Name="StartDatePicker" Margin="5,2,0,0" SelectedDate="{Binding viewCharts.StartDate}" Background="White" BorderBrush="{x:Null}"/>
+                                <Button Content="Применить" Margin="5,0,0,0" Command="{Binding viewCharts.ApplyFilterCommand}"/>
+                                <Button Content="Приблизить" Margin="5,0,0,0" Command="{Binding viewCharts.ZoomInCommand}"/>
+                                <Button Content="Отдалить" Margin="5,0,0,0" Command="{Binding viewCharts.ZoomOutCommand}"/>
+                            </StackPanel>
+                            <lvc:CartesianChart x:Name="Charts" Grid.Row="1" 
+                                      Series="{Binding viewCharts.Series}" 
+                                      XAxes="{Binding viewCharts.XAxes}"
+                                      
+                                      ZoomMode="PanX"
+                                      LegendPosition="Bottom"
+                                      LegendTextSize="13"
+                                      LegendTextPaint="{Binding viewCharts.LegendTextPaint}" Grid.ColumnSpan="2"
+                                      />
+                        </Grid>
+                    </Border>
+                     <Border Grid.Column="1" Background="#1F2427" CornerRadius="15"  Width="756" Margin="28,0,0,0" >
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="264*"/>
+                                <ColumnDefinition Width="1277*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="60"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="Котлы" FontFamily="Roboto" FontSize="20" FontWeight="SemiBold" Foreground="White" VerticalAlignment="Center" Margin="30,0,0,0" Grid.ColumnSpan="2" />
+                            <StackPanel Orientation="Horizontal" Margin="0,18,10,0" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Row="0" Grid.Column="1">
+                                <DatePicker x:Name="StartDatePicker_2" Margin="5,2,0,0" SelectedDate="{Binding viewCharts_2.StartDate}" Background="White" BorderBrush="{x:Null}"/>
+                                <Button Content="Применить" Margin="5,0,0,0" Command="{Binding viewCharts_2.ApplyFilterCommand}"/>
+                                <Button Content="Приблизить" Margin="5,0,0,0" Command="{Binding viewCharts_2.ZoomInCommand}"/>
+                                <Button Content="Отдалить" Margin="5,0,0,0" Command="{Binding viewCharts_2.ZoomOutCommand}"/>
+                            </StackPanel>
+                            <lvc:CartesianChart x:Name="Charts_2" Grid.Row="1" 
+                                 Series="{Binding viewCharts_2.Series}" 
+                                 XAxes="{Binding viewCharts_2.XAxes}"
+                  
+                                  ZoomMode="PanX"
+                                  LegendPosition="Bottom"
+                                  LegendTextSize="13"
+                                  LegendTextPaint="{Binding viewCharts_2.LegendTextPaint}" Grid.ColumnSpan="2"
+                                                />
+                        </Grid>
+                    </Border>
+                    </StackPanel>
+                </Grid>
+
+            </Grid>
+        </ScrollViewer>
+        
+    </Grid>
+</UserControl>
